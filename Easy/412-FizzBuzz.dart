@@ -11,8 +11,11 @@ answer[i] == i (as a string) if none of the above conditions are true.
 
  */
 
+const String fizz = 'Fizz';
+const String buzz = 'Buzz';
 
 class Solution {
+
   List<String> fizzBuzz(int n) {
     List<String> fizzBuzzList = [];
 
@@ -20,9 +23,9 @@ class Solution {
     {
         String toBeAdded = "";
         if(temp % 3 == 0)
-        toBeAdded += "Fizz";
+        toBeAdded += fizz;
         if(temp % 5 == 0)
-        toBeAdded += "Buzz";
+        toBeAdded += buzz;
         if(toBeAdded.isEmpty)
         toBeAdded += temp.toString();
         
